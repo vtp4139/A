@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuyCheThi">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/desktop_screen"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUY CHẾ THI"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Thí sinh thi trên máy tính"
+        android:textSize="20sp"
+        android:layout_margin="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Đề thi gồm có 20 câu hỏi"
+        android:textSize="20sp"
+        android:layout_margin="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Thời gian thi: 19 phút"
+        android:textSize="20sp"
+        android:layout_margin="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Thi sinh cần đạt 21/25 để qua sát hạch lý thuyết"
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:textColor="#F44336"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/start_custom_button"
+        android:text="Bắt đầu thi"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_margin="10sp"
+        android:textSize="20sp"/>
+</LinearLayout>

@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThiSatHachActivity"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+
+    <!--Sử dụng ViewFliper cho phép người dùng có thể qua lại các câu-->
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <!--CÂU 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 1: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau1_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau1_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau1_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 2: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau2_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau2_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau2_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 3: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau3_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau3_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau3_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 4: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau4_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau4_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau4_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 5: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau5_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau5_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau5_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 6: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau6_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau6_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau6_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 7-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 1: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau7_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau7_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau7_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 8-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 8: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau8_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau8_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau8_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 9-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 9: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau9_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau9_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau9_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 10-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 10: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau10_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau10_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau10_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 11-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 11: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau11_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau11_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau11_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 12-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 12: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau12"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau12_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau12_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau12_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 13-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 13: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau13"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau13_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau13_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau13_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 14-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 14: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau14"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau14_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau14_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau14_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 15-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 15: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau15"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau15_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau15_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau15_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 16-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 16: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau16"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau16_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau16_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau16_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 17-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 17: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau17"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau17_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau17_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau17_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 18-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 18: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau18"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau18_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau18_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau18_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 19-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 19: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau19"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau19_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau19_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau19_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 20-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 20: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau20"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau20_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau20_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau20_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 21-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 21: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau21"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau21_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau21_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau21_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 22-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 22: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau22"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau22_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau22_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau22_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 23-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 23: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau23"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau23_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau23_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau23_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 24-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 20: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau24"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau24_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau24_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau24_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--CÂU 25-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_cau25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Câu 20: Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/imageView_cau25"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ltbienbao_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau25_dapan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau25_dapan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt."
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_cau25_dapan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="@drawable/start_custom_button"
+            android:textColor="@android:color/white"
+            android:layout_margin="20dp"
+            android:id="@+id/button_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu trước"
+            android:onClick="previousView"
+            android:layout_gravity="left"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:background="@drawable/start_custom_button"
+            android:textColor="@android:color/white"
+            android:layout_margin="20dp"
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếp theo"
+            android:onClick="nextView"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

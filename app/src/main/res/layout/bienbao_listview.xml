@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/img_hinhanh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/camdithangvarephai"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/txt_tenBienBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên biển báo"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/txt_soHieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số hiệu"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/txt_noiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biểu thị đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ phải; biển đặt ở vị trí ngay trước nút giao. Nếu có quy định cấm về thời gian hoặc loại xe thì sử dụng biển báo phụ thời gian hoặc hình vẽ loại xe cấm."
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
